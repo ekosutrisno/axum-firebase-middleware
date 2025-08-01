@@ -1,0 +1,36 @@
+[package]
+name = "axum-firebase-middleware"
+version = "0.1.0"
+edition = "2021"
+authors = ["Eko Sutrisno <alquran.digital.id@gmail.com>"]
+description = "Axum middleware for authenticating Firebase ID tokens"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ekosutrisno/axum-firebase-middleware"
+readme = "README.md"
+categories = ["authentication", "web-programming::http-server", "asynchronous"]
+keywords = ["axum", "firebase", "auth", "middleware", "jwt"]
+documentation = "https://docs.rs/axum-firebase-middleware"
+
+[dependencies]
+axum = { version = "0.8", features = ["macros"] }
+jsonwebtoken = "9.0"
+log = "0.4"
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "2.0"
+tokio = { version = "1.0", features = ["rt-multi-thread", "macros"] }
+uuid = { version = "1.0", features = ["v4"] }
+
+[dev-dependencies]
+tower = "0.5"
+serde_json = "1.0"
+
+[features]
+default = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lib]
+doctest = false
