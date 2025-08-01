@@ -2,7 +2,7 @@
 name = "axum-firebase-middleware"
 version = "0.1.0"
 edition = "2021"
-authors = ["Eko Sutrisno <alquran.digital.id@gmail.com>"]
+authors = ["Eko Sutrisno <ekosutrisno801@gmail.com>"]
 description = "Axum middleware for authenticating Firebase ID tokens"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/ekosutrisno/axum-firebase-middleware"
