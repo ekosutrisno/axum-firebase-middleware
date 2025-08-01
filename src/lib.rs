@@ -562,10 +562,10 @@ async fn validate_firebase_token(
 /// use axum::{Router, routing::get, Json, response::IntoResponse, Extension, middleware::from_fn_with_state};
 /// use axum_firebase_middleware::{firebase_auth_middleware, FirebaseConfig, FirebaseClaims};
 /// use jsonwebtoken::errors::ErrorKind::Json as OtherJson;
-/// 
+///
 ///
 /// let config = FirebaseConfig::new("project-id".to_string())?;
-/// 
+///
 /// async fn protected_handler(Extension(claims): Extension<FirebaseClaims>) -> impl IntoResponse {
 ///     Json(serde_json::json!({
 ///         "message": "Successfully authenticated",

@@ -233,9 +233,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Clone the repository
 2. Run tests: `cargo test`
-3. Run examples: `cargo run --example basic_usage`
-4. Check formatting: `cargo fmt`
-5. Run clippy: `cargo clippy`
+3. Check formatting: `cargo fmt`
+4. Run clippy: `cargo clippy`
 
 ## License
 
